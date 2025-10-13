@@ -1,30 +1,30 @@
 
 import IconLink from "../../CastomElements/IconLink.js"
+import IconButton from "../../CastomElements/IconButton.js"
+import Background from "../../CastomElements/CastomBackground.js"
 
 export default function Home(){
+  
+  
   return(
-    <div className="h-dvh flex justify-center items-center relative">
-      
-      <div className="flex items-center md:gap-2 max-w-[500px]">
+    <div className=" flex justify-center items-center min-h-dvh">
+
+      {/*Content*/}
+      <div className="max-w-[600px] w-[80%] relative flex flex-col gap-4 items-center justify-center">
         
-        <img className="h-[200px]" src="/Assets/icons/left.png" alt="cake" />
-        <div className="text-center">
-          <p className="big text-3xl">CakeCity</p>
-          <p className="font-bold">A <span className="bg-blue-500">Cake</span> Word stand on Khulna Bagerhat.</p>
-          <p className="text-[#567dcc] text-sm mt-3"><i className="fa-solid fa-location-dot"></i>Old Police Line</p>
+        {/*CakeCity Logo */}
+        <div className=" relative p-4 rounded-2xl shadow-2xl">
+          <img className=" w-full drop-shadow-2xl" src="/Assets/images/cakecity text.png" alt ="." />
+          <p className="absolute bottom-0.5 text-xs text-[var(--text)] right-2">Bagerhat</p>
         </div>
-        <img className="h-[200px]" src="/Assets/icons/right.png" alt="cake" />
-        
+        {/*Some info*/}
+        <div className="p-4 rounded-2xl shadow-2xl flex flex-col gap-2">
+          <p><i className="fa-solid fa-circle-info"></i> Its a Beutifull cake shop on bagerhat. we give you best cake on bangladesh.</p>
+          <p><i className="fa-solid fa-location-dot"></i> Puran Police-line</p>
+          <IconButton text="Castom Cake" icon_type="html" icon="fa-solid fa-shop" />
+        </div>
       </div>
-      
-      
-      {/* About us and contact Shortcat*/}
-      <div className="flex gap-2.5 absolute bottom-10">
-        <IconLink path="/" icon="facebook.png" />
-        <IconLink path="/" icon="tik-tok.png" />
-        <IconLink path="/" icon="whatsapp.png" />
-      </div>
-      
+    
     </div>
     )
 }

@@ -21,7 +21,7 @@ export default function TheemTogle() {
   return(
     <div className={` ${ width < 500 ? "absolute bottom-3 right-3" : ""} `}>
       <input checked={checked} onChange={Onchange} type="checkbox" className="opacity-0 absolute" id="checkbox" />
-      <label htmlFor="checkbox" className=" bg-[#346697] w-[50px] h-[26px] rounded-full relative p-[5px] cursor-pointer flex justify-between items-center ">
+      <label htmlFor="checkbox" className=" bg-[#346697] w-[45px] h-[20px] rounded-full relative p-[5px] cursor-pointer flex justify-between items-center ">
         <i className=" text-[#f39c12] fas fa-sun"></i>
         <i className="text-[#f1c40f] fas fa-moon"></i>
         <span className={`${checked ? "translate-x-[24px]" : ""} bg-[#fff] w-[22px] h-[22px] absolute left-[2px] top-[2px] rounded-[50%] transition-transform`}></span>

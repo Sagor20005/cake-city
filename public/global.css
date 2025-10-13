@@ -1,8 +1,8 @@
 
 :root {
   --bg: #e2e8f0;
-  --text: #0f172a;
-  --box: #c5d6e8;
+  --text: #000000;
+  --box: #619d9db0;
   --title: #2dab6b;
   --link:#61a7e2;
 }
@@ -10,16 +10,19 @@
 [data-theme='dark'] {
   --bg: #0f172a;
   --text: #e2e8f0;
-  --box: #3d4046;
+  --box: #3d4046ba;
 }
 .big{
   font-family: "Poller One", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-
-
 .ragular {
   font-family: "SUSE Mono", sans-serif;
 }
+
+
+
+
+
 
