@@ -1,3 +1,5 @@
+import { Bounce } from "react-awesome-reveal"
+
 export default function Sarvices({sarvices}){
   
   
@@ -6,7 +8,8 @@ export default function Sarvices({sarvices}){
   return(
     <div className="mt-16 grid md:grid-cols-3 gap-3 gap-y-6">
         
-        {
+        <Bounce cascade>
+          {
           sarvices.map((sarvice)=>{
             return(
             <div className="rounded-md shadow-2xl p-3 flex items-center text-center md:text-start md:items-start flex-col gap-4">
@@ -17,6 +20,7 @@ export default function Sarvices({sarvices}){
             )
           })
         }
+        </Bounce>
         
       </div>
     )

@@ -1,4 +1,5 @@
 import IconButton from "../../CastomElements/IconButton.js"
+import { Slide, Fade } from "react-awesome-reveal"
 
 export default function Cakes(){
   
@@ -81,7 +82,8 @@ export default function Cakes(){
   // CAKES RENDER
   return(
     <CakesBody>
-      {
+      <Slide cascade damping={0.2} triggerOnce>
+        {
         cakes.map((cake)=>{
           return(
           <div className=" hover:scale-105 hover:bg-[var(--box)] transition shadow-2xl rounded-2xl p-4 flex flex-col gap-2 items-center">
@@ -97,6 +99,7 @@ export default function Cakes(){
           )
         })
       }
+      </Slide>
     </CakesBody>
     )
 }
@@ -104,7 +107,7 @@ export default function Cakes(){
 function CakesBody({children}){
   return(
     <div className="relative pt-[100px]">
-      <h1 className="text-2xl text-[var(--title)] text-center">Cakes</h1>
+      <Fade><h1 className="text-2xl text-[var(--title)] text-center">Cakes</h1></Fade>
       <div className="p-4 grid justify-center gap-3 grid-cols-2 md:grid-cols-[repeat(auto-fit,300px)]">
         {children}
       </div>

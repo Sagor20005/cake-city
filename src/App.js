@@ -5,17 +5,20 @@ import Cakes from "./Pages/Cakes/Cakes.js"
 import Gallary from "./Pages/Galary/Gallary.js"
 import Background from "./CastomElements/CastomBackground.js"
 import AboutUs from "./Pages/About_us/AboutUs.js"
+import SplashCursor from "./Animation/SplashCursor.js"
+import BubbleMenu from "./Pages/Nav/BubbleMenu.js"
 
 function App() {
   return (
     <div className="min-h-dvh ragular text-[var(--text)] bg-[var(--bg)] overflow-hidden">
       <BrowserRouter>
+        <BubbleMenu />
         <Background />
-        <Navbar />
+        <SplashCursor />
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/cakes" element={<Cakes />}/>
-          <Route path="/galary" element={<Gallary />}/>
+          <Route path="/gallary" element={<Gallary />}/>
           <Route path="/about" element={<AboutUs />}/>
         </Routes>
       </BrowserRouter>

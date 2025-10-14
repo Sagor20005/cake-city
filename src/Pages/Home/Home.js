@@ -1,7 +1,7 @@
-
 import IconLink from "../../CastomElements/IconLink.js"
 import IconButton from "../../CastomElements/IconButton.js"
 import Background from "../../CastomElements/CastomBackground.js"
+import { Bounce } from "react-awesome-reveal"
 
 export default function Home(){
   
@@ -12,7 +12,9 @@ export default function Home(){
       {/*Content*/}
       <div className="max-w-[600px] w-[80%] relative flex flex-col gap-4 items-center justify-center">
         
-        {/*CakeCity Logo */}
+        <Bounce cascade>
+          
+          {/*CakeCity Logo */}
         <div className=" relative p-4 rounded-2xl shadow-2xl">
           <img className=" w-full drop-shadow-2xl" src="/Assets/images/cakecity text.png" alt ="." />
           <p className="absolute bottom-0.5 text-xs text-[var(--text)] right-2">Bagerhat</p>
@@ -23,6 +25,10 @@ export default function Home(){
           <p><i className="fa-solid fa-location-dot"></i> Puran Police-line</p>
           <IconButton text="Castom Cake" icon_type="html" icon="fa-solid fa-shop" />
         </div>
+        
+          
+        </Bounce>
+        
       </div>
     
     </div>
