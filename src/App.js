@@ -7,6 +7,7 @@ import Background from "./CastomElements/CastomBackground.js"
 import AboutUs from "./Pages/About_us/AboutUs.js"
 import SplashCursor from "./Animation/SplashCursor.js"
 import BubbleMenu from "./Pages/Nav/BubbleMenu.js"
+import ContactUs from "./Pages/ContactUs/ContactUs.js"
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/cakes" element={<Cakes />}/>
           <Route path="/gallary" element={<Gallary />}/>
           <Route path="/about" element={<AboutUs />}/>
+          <Route path="/contact" element={<ContactUs />}/>
         </Routes>
       </BrowserRouter>
     </div>

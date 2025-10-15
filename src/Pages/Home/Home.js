@@ -21,7 +21,7 @@ export default function Home(){
         </div>
         {/*Some info*/}
         <div className="p-4 rounded-2xl shadow-2xl flex flex-col gap-2">
-          <p><i className="fa-solid fa-circle-info"></i> Its a Beutifull cake shop on bagerhat. we give you best cake on bangladesh.</p>
+          <p><i className="fa-solid fa-circle-info"></i> Handcrafted with love and the finest ingeredirnts, our cakes are perfect for meking your moments special</p>
           <p><i className="fa-solid fa-location-dot"></i> Puran Police-line</p>
           <IconButton text="Castom Cake" icon_type="html" icon="fa-solid fa-shop" />
         </div>
