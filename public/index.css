@@ -852,10 +852,6 @@ video {
   max-width: 600px;
 }
 
-.max-w-\[700px\] {
-  max-width: 700px;
-}
-
 .max-w-full {
   max-width: 100%;
 }
@@ -946,10 +942,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-items-center {
-  justify-items: center;
 }
 
 .gap-1 {
@@ -1067,11 +1059,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-amber-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 243 199 / var(--tw-bg-opacity, 1));
 }
 
 .object-contain {
