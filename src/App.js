@@ -8,10 +8,11 @@ import AboutUs from "./Pages/About_us/AboutUs.js"
 import SplashCursor from "./Animation/SplashCursor.js"
 import BubbleMenu from "./Pages/Nav/BubbleMenu.js"
 import ContactUs from "./Pages/ContactUs/ContactUs.js"
+import Footer from "./Pages/Nav/Footer.js"
 
 function App() {
   return (
-    <div className="min-h-dvh ragular text-[var(--text)] bg-[var(--bg)] overflow-hidden">
+    <div className="min-h-[calc(100dvh)] ragular text-[var(--text)] bg-[var(--bg)] overflow-hidden">
       <BrowserRouter>
         <BubbleMenu />
         <Background />
@@ -24,6 +25,7 @@ function App() {
           <Route path="/contact" element={<ContactUs />}/>
         </Routes>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 }

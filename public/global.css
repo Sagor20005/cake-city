@@ -1,7 +1,7 @@
 
 :root {
-  --bg: #e2e8f0;
-  --text: #000000;
+  --bg: ##0000005e;
+  --text: #e2e8f0;
   --box: #619d9db0;
   --title: #2dab6b;
   --link:#61a7e2;
@@ -18,7 +18,10 @@
   font-style: normal;
 }
 .ragular {
-  font-family: "SUSE Mono", sans-serif;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 

@@ -222,7 +222,8 @@ export default function BubbleMenu({
             'h-12 md:h-14',
             'px-4 md:px-8',
             'gap-2',
-            'will-change-transform'
+            'will-change-transform',
+            "text-black"
           ].join(' ')}
           aria-label="Logo"
           style={{
