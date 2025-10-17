@@ -15,14 +15,14 @@ export default function Locations(){
             <i className="p-3 max-h-4 bg-blue-500 rounded-xl fa-solid fa-location-dot"></i>
             <div>
               <h3 className="text-xl font-semibold my-3">Bagerhat</h3>
-              <p>Khulna Bagerhat, Sador bagerhat</p>
+              <p className="text-[var(--sub-text)]">Khulna Bagerhat, Sador bagerhat</p>
             </div>
           </div>
           <div className="flex gap-2 items-center">
             <i className="p-3 max-h-4 bg-blue-500 rounded-xl fa-solid fa-location-dot"></i>
             <div>
               <h3 className="text-xl font-semibold my-3">Nur Morjid Road</h3>
-              <p>Nurmorjid-mor Bagerhat, old police-line</p>
+              <p className="text-[var(--sub-text)]">Nurmorjid-mor Bagerhat, old police-line</p>
             </div>
           </div>
         </div>

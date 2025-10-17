@@ -1,8 +1,10 @@
 import IconButton from "../../CastomElements/IconButton.js"
 import { Slide, Fade } from "react-awesome-reveal"
+import AlertComponent,{setOpen} from "../../CastomElements/AlertComponent.js"
+import { useState } from "react"
 
 export default function Cakes(){
-  
+  const [ openAlert,setOpenAlert ] = useState(false)
   
   const cakes = [
   {
@@ -61,7 +63,7 @@ export default function Cakes(){
   
   // LODDING EFFECT RENDER
   if(false) return(
-    <CakesBody>
+    <CakesBody State={[openAlert,setOpenAlert]}>>
         {
           Array.from({length:5}).map((e,i)=>{
             return(
@@ -81,7 +83,7 @@ export default function Cakes(){
   
   // CAKES RENDER
   return(
-    <CakesBody>
+    <CakesBody State={[openAlert,setOpenAlert]}>
       <Slide cascade damping={0.2} triggerOnce>
         {
         cakes.map((cake)=>{
@@ -93,7 +95,7 @@ export default function Cakes(){
             <div className="flex flex-col gap-1">
               <p className="font-bold">{cake.name}</p>
               <p className="text-sm md:text-base" >price: {cake.price}tk</p>
-              <IconButton text="Shop Now" icon_type="html" icon="fa-solid fa-shop" />
+              <IconButton onClick={()=>setOpenAlert(true)} text="Shop Now" icon_type="html" icon="fa-solid fa-shop" />
             </div>
           </div>
           )
@@ -104,9 +106,10 @@ export default function Cakes(){
     )
 }
 
-function CakesBody({children}){
+function CakesBody({State,children}){
   return(
-    <div className="relative pt-[100px]">
+    <div className="min-h-dvh relative pt-[100px]">
+      <AlertComponent State={State} />
       <Fade><h1 className="text-2xl text-[var(--title)] text-center">Cakes</h1></Fade>
       <div className="p-4 grid justify-center gap-3 grid-cols-2 md:grid-cols-[repeat(auto-fit,300px)]">
         {children}

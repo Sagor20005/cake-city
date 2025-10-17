@@ -6,7 +6,7 @@ import SplitText from "../../Animation/SplitText.js"
 export default function AboutUs(){
   
   return(
-    <div className="pt-[100px] px-5 md:px-52 relative">
+    <div className="min-h-dvh pt-[100px] px-5 md:px-52 relative">
       
       
       <div>
