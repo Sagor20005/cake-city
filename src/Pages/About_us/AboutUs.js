@@ -1,18 +1,22 @@
 import Sarvices from "./Sarvices.js"
-import {sarvices} from "../../Extra-Data/Sarvice.js"
 import SplitText from "../../Animation/SplitText.js"
 //import ScrollStackCreate from "./ScrollStackCreate.js"
+import {useContext} from "react"
+import { MainContext } from "../../Context/MainData/MainData.js"
 
 export default function AboutUs(){
+  
+  // Read Data 
+  const { about } = useContext(MainContext)
   
   return(
     <div className="min-h-dvh pt-[100px] px-5 md:px-52 relative">
       
       
       <div>
-        <h3 className="text-xl mb-2.5 font-bold">About Us.</h3>
+        <h3 className="text-xl mb-2.5 font-bold text-[var(--title)]">About Us.</h3>
         <SplitText
-          text="CakeCity is a Popular Cake store on bagerhat. they provide sweet cake every popular cake. they also make castom order cake. We geranty that we give you our best quality cake. to make your program beutifull."
+          text={about.text}
           className="text-larg font-semibold text-start"
           delay={10}
           duration={0.1}
@@ -26,7 +30,7 @@ export default function AboutUs(){
       </div>
       
       {/*Sarvices*/} 
-      <Sarvices sarvices={sarvices} />
+      <Sarvices sarvices={about.sarvices} />
     </div>
     )
 }
